@@ -1,0 +1,9 @@
+.env
+log/
+log/development.log
+log/production.log  
+.cache
+.pid
+tmp/
+log/
+.DS_Store

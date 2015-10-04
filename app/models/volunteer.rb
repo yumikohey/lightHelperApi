@@ -6,4 +6,5 @@ class Volunteer < ActiveRecord::Base
   has_many :skills
   has_many :projects
   has_many :weeklyhours
+  belongs_to :deparment
 end

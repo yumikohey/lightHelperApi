@@ -6,4 +6,6 @@ Rails.application.routes.draw do
   get '/volunteers/:id' => 'volunteer/profiles#show'
 
   put '/volunteers/:id' => 'volunteer/profiles#update'
+
+  get '/departments/:id' => 'departments#show'
 end
