@@ -10,10 +10,15 @@ class Volunteer::ProfilesController < ApplicationController
 		render json:@volunteer
 	end
 
+	def all
+		@volunteers = Volunteer.all
+		render json:@volunteers
+	end
+
 	private
 
 	def set_volunteer
-	  @volunteer = Volunteer.find(params[:id])
+	  @volunteer = Volunteer.find(params[:id]) if params[:id]
 	end
 
 end

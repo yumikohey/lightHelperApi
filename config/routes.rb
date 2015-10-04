@@ -8,4 +8,6 @@ Rails.application.routes.draw do
   put '/volunteers/:id' => 'volunteer/profiles#update'
 
   get '/departments/:id' => 'departments#show'
+
+  get '/volunteers/all' => 'volunteer/profiles#all'
 end
