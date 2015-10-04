@@ -4,4 +4,6 @@ Rails.application.routes.draw do
                                        passwords: 'volunteer/passwords'}
 
   get '/volunteers/:id' => 'volunteer/profiles#show'
+
+  put '/volunteers/:id' => 'volunteer/profiles#update'
 end

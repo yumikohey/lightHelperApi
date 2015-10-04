@@ -5,4 +5,5 @@ class Volunteer < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
   has_many :skills
   has_many :projects
+  has_many :weeklyhours
 end

@@ -4,6 +4,12 @@ class Volunteer::ProfilesController < ApplicationController
 		render json:@volunteer
 	end
 
+	def update
+		@volunteer.weekly_hrs = params[:weekly_hrs]
+		@volunteer.save
+		render json:@volunteer
+	end
+
 	private
 
 	def set_volunteer

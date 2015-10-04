@@ -1,0 +1,2 @@
+class WeeklyhoursController < ApplicationController
+end
